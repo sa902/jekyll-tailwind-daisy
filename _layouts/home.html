@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}" data-theme="dark">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>{{ page.title }} - {{ site.title }}</title>
+
+
+  <!-- Load from unpkg -->
+  <script src="https://unpkg.com/htmx.org@1.5.0"></script>
+  <!-- have a button POST a click via AJAX -->
+<!--  head is loading here -->
+  {% include head.html %}
+<!--  head should be loaded here -->
+
+
+<!--  {% include navbar.html %}-->
+  {% include navbar2.html %}
+
+</head>
+<body>
+
+{{ content }}
+{% include button.html %}
+
+</body>
+</html>

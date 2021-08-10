@@ -1,0 +1,29 @@
+{
+  "name": "test-two",
+  "version": "1.0.0",
+  "description": "",
+  "main": "postcss.config.js",
+  "scripts": {
+    "jekyll:dev": "bundle exec jekyll serve ",
+    "jekyll:build": "JEKYLL_ENV=production bundle exec jekyll build",
+    "css:dev1": "postcss _sass/main.scss --output assets/css/style.css --watch",
+    "css:dev": "postcss _sass --dir assets/css/ --watch",
+    "css:build": "NODE_ENV=production postcss _sass/main.scss --output assets/css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10.3.1",
+    "cssnano": "^5.0.7",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.7"
+  },
+  "dependencies": {
+    "daisyui": "^1.11.0",
+    "postcss-scss": "^4.0.0",
+    "tailwind": "^4.0.0"
+  }
+}

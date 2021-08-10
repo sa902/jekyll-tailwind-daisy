@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sqr{
+  border-radius: 0px;
+}
+.body-cont{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 20%;
+  margin-right: 20%;
+  position: fixed;
+}
+//.sticky-nav{
+//  position: fixed;
+//}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US" data-theme="dark">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>bitch! - </title>
+
+
+  <!-- Load from unpkg -->
+  <script src="https://unpkg.com/htmx.org@1.5.0"></script>
+  <!-- have a button POST a click via AJAX -->
+<!--  head is loading here -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+
+<!--  head should be loaded here -->
+
+
+<!--  
+<div class="navbar grid-cols-1">
+    <div class="flex-none px-2 mx-2">
+    <span class="text-lg font-bold">
+            DaisyUI
+          </span>
+    </div>
+    <div class="flex justify-end px-2 mx-2">
+        <div class="items-stretch hidden lg:flex">
+            <a class="btn btn-ghost btn-sm rounded-btn">
+                Home
+            </a>
+            <a class="btn btn-ghost btn-sm rounded-btn">
+                Portfolio
+            </a>
+            <a class="btn btn-ghost btn-sm rounded-btn">
+                About
+            </a>
+            <a class="btn btn-ghost btn-sm rounded-btn">
+                Contact
+            </a>
+        </div>
+    </div>
+    <div class="flex-none">
+        <button class="btn btn-square btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                 class="inline-block w-6 h-6 stroke-current">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+        </button>
+    </div>
+    <div class="flex-none">
+        <button class="btn btn-square btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                 class="inline-block w-6 h-6 stroke-current">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+        </button>
+    </div>
+</div>
+-->
+  
+<div class="grid body-cont">
+  <div class="navbar grid-cols-1">
+    <div class="flex px-2 mx-2"><span class="text-lg font-bold" id="test">Enemy</span></div>
+    <div class="flex-grow justify-end px-2 mx-2">
+      <div class="group">
+        <div class="btn btn-ghost btn-sm sqr">square</div>
+        <div class="btn btn-ghost btn-sm sqr">test</div>
+        <div class="btn btn-ghost btn-sm sqr">test</div>
+        <div class="btn btn-ghost btn-sm sqr">test</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</head>
+<body>
+
+<div class="hero min-h-screen" style="background-image: url(&quot;https://picsum.photos/id/1005/1600/1400&quot;);">
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="text-center hero-content text-neutral-content">
+    <div class="max-w-md">
+      <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+      <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      <button class="btn btn-primary">Get Started</button>
+    </div>
+  </div>
+</div>
+<h2>You're ready to go!</h2>
+<h1>Start developing your Jekyll website.</h1>
+<button class="test">testbutton</button>
+<div class="remark">
+  <p>Pug rocks!!</p>
+</div>
+<button class="btn btn-primary" style="border-radius: 12px;">test button 3</button>
+<button class="btn" hx-get="/pugrox">Test button 2</button>
+
+<button hx-get="/clicked" hx-swap="innerHTML" class="btn">neutral</button>
+
+
+</body>
+</html>
