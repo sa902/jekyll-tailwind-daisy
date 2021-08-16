@@ -7,6 +7,12 @@ module.exports = {
     ],
     darkMode: false,
     theme: {
+        container: {
+            center: true,
+
+            padding: '4rem',
+
+        },
         extend: {},
     },
     variants: {},

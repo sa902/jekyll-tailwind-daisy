@@ -10,8 +10,12 @@
   padding-right: 1rem;
   margin-left: 20%;
   margin-right: 20%;
-  position: fixed;
 }
-//.sticky-nav{
-//  position: fixed;
-//}
+.sticky-nav{
+  position: sticky;
+  top: 0;
+}
+
+span {
+  flex:1 0 auto;
+}
