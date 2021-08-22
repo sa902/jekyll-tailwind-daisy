@@ -10,12 +10,18 @@
 .container.mx-lg
     .divider How we can make your business more effective online
 
-.container.mx-lg
-    .grid.grid-cols-3
-        .one.text-4xl.flex.justify-center
-            |yes
-        .two.text-4xl.flex.justify-center
-            | no
+.container
+    .grid.grid-cols-1(class="md:grid-cols-3")
+        .one
+            .text-4xl.flex.justify-center
+                |Software you can talk to
+            .text-xl
+                    | We take the latest technology and apply it to solve common problems faced by small businesses every day.
+                    | Research shows that businesses who reply to enquiries faster are
+                    | more likely to do better.  Our conversational software allows
+                    | your business to react immediately to customer enquiries and secure work.
+        .two.h24
+            include digpar/price-card.pug
         .three.text-4xl.flex.justify-center
             | maybe
 

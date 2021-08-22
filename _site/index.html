@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" data-theme="dark">
+<html lang="en-US" data-theme="cupcake">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
@@ -77,55 +77,73 @@
 </head>
 <body>
 
-<div class="navbar sticky-nav">
-  <div class="navbar-start justify-center"><span id="start-text">tested</span></div>
-  <div class="navbar-end justify-center">
-    <div class="btn btn-ghost btn-sm sqr">square</div>
-    <div class="btn btn-ghost btn-sm sqr">b1tch</div>
-    <div class="btn btn-ghost btn-sm sqr">ho</div>
-    <div class="btn btn-ghost btn-sm sqr">down</div>
-    <div class="dropdown dropdown-end">
-      <div class="btn btn-ghost rounded-btn sqr" tabindex="0">Dropdown</div>
-      <ul class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52" tabindex="0">
-        <li><a>Item 1</a></li>
-        <li><a>Item 2</a></li>
-        <li><a>Item 3</a></li>
-      </ul>
+<!--include sundog/navbar.pug-->
+<!--include hero.pug-->
+<!--include content.pug-->
+<!---->
+<div class="bg-primary">
+  <div class="container mx-lg">
+    <div class="grid grid-cols-2">
+      <div class="flex justify-center">
+        <div class="footer-col" id="left"><span id="left-text">column with links</span>
+          <div class="flex justify-center">
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="footer-col" id="right"><span id="right-text">column with links</span>
+          <div class="flex justify-center">
+            <ul>
+              <li>1</li>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-<!--include navbar2.pug-->
-<div class="hero min-h-screen" style="background-image: url(&quot;https://picsum.photos/id/1005/1600/1400&quot;);">
-  <div class="hero-overlay bg-opacity-30"></div>
-  <div class="text-center hero-content text-neutral-content">
-    <div class="max-w-md">
-      <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-      <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-      <button class="btn btn-ghost sqr">Get Started</button>
+  <div class="container">
+    <div class="divider"></div>
+  </div>
+  <div class="container mx-lg">
+    <div class="flex justify-center">
+      <div class="grid grid-cols-2">
+        <div class="footer-col flex justify-center mx-20"><span class="flex justify-center">privacy policy</span><br/></div>
+        <div class="footer-col flex justify-center mx-20"><span class="flex justify-center">terms and conditions</span></div>
+      </div>
     </div>
   </div>
-</div>
-<div class="container mx-lg"><span class="justify-center" id="header-text">
-    <div class="text-4xl flex justify-center">Your friendly neighborhood tech company</div></span><br/><span class="flex justify-center" id="bottom-text">
-    <div class="text-2xl justify-center">Big ideas for small businesses! We create digital tools to make life easier and let you focus on what you do best.</div></span></div>
-<div class="container mx-lg">
-  <div class="divider">How we can make your business more effective online</div>
-</div>
-<div class="container mx-lg">
-  <div class="grid grid-cols-3">
-    <div class="one text-4xl flex justify-center">yes</div>
-    <div class="two text-4xl flex justify-center">no</div>
-    <div class="three text-4xl flex justify-center">maybe</div>
+  <div class="container mx-lg">
+    <div class="flex justify-center"><span class="flex justify-center" id="copyright">Copyright 2021 bitches</span></div>
   </div>
 </div>
-<h2>You're ready to go!</h2>
-<h1>Start developing your Jekyll website.</h1>
-<button class="test">testbutton</button>
-<div class="remark">
-  <p>Pug rocks!!</p>
-</div>
-<button class="btn btn-primary" style="border-radius: 12px;">test button 3</button>
-<button class="btn" hx-get="/pugrox">Test button 2</button>
+<!-- --->
+<!--     const employee = {-->
+<!--         firstName: 'James',-->
+<!--         lastName: 'Hibbard',-->
+<!--         extn: '12345'-->
+<!--     }-->
+<!---->
+<!-- #employee-->
+<!--     p= `${employee.firstName} ${employee.lastName}`-->
+<!--     p Extension:-->
+<!--         if employee.extn-->
+<!--             =employee.extn-->
+<!--         else-->
+<!--             | n/a-->
+<!-- br-->
+<!-- br-->
+<!-- br-->
+<!-- button.btn.btn-primary(style='border-radius: 12px;') test button 3-->
+<!-- button.btn(hx-get='/pugrox') Test button 2-->
 
 <button hx-get="/clicked" hx-swap="innerHTML" class="btn">neutral</button>
 

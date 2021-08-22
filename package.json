@@ -5,16 +5,19 @@
   "main": "postcss.config.js",
   "scripts": {
     "jekyll:dev": "bundle exec jekyll serve ",
+    "bliss:s": "sudo bliss s w",
     "jekyll:build": "JEKYLL_ENV=production bundle exec jekyll build",
     "css:dev1": "postcss _sass/main.scss --output assets/css/style.css --watch",
     "css:dev": "postcss _sass --dir assets/css/ --watch",
-    "css:build": "NODE_ENV=production postcss _sass/main.scss --output assets/css/style.css"
+    "css:build": "NODE_ENV=production postcss _sass/main.scss --output assets/css/style.css",
+    "dev": "concurrently --kill-others \"npm run bliss:s\" \"npm run css:dev1\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^10.3.1",
+    "concurrently": "^6.2.1",
     "cssnano": "^5.0.7",
     "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",

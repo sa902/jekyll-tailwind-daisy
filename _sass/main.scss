@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.sqr{
-  border-radius: 0px;
-}
+
 .body-cont{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -14,6 +12,13 @@
 .sticky-nav{
   position: sticky;
   top: 0;
+}
+
+#colorstrip{
+  width: 100%; height: 100%;
+  border-style: solid;
+  border-color: #dc1c1c;
+  background-color: #ce1515;
 }
 
 span {

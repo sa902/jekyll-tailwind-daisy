@@ -33,6 +33,7 @@ module.exports = {
             'forest',
             'synthwave',
             'cyberpunk',
+            'cupcake',
             {
                 'mytheme': {
                     'primary': '#570df8',
