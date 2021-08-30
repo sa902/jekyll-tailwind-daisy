@@ -1,0 +1,10 @@
+.container(data-theme='cupcake')
+    .card.justify-center.bg-secondary.mb-56.shadow-4xl#newsletter
+        .card-title.flex.justify-center
+            | Sign up to our news letter
+        .card-body
+            label.label
+                span.label-text Please Enter your Email
+            input.input(type='text' placeholder='Email')
+            .div.remark.pt-12.flex.justify-center
+                button.btn(hx-get='pugrox',hx-swap='outerHTML')  enter
